@@ -1,9 +1,9 @@
 import { Box, Container, Grid, Typography } from '@mui/material'
-import { margin } from '@mui/system'
+import { margin, padding } from '@mui/system'
 import React from 'react'
 import img from '../../Images/image-4.png'
 
-
+import ArrowRightIcon from '@mui/icons-material/ArrowRight';
 
 const imgStyle={
     width:'100%',
@@ -20,7 +20,7 @@ export default function Choice() {
                                 fontFamily: 'Graphik',
                                 fontStyle: 'normal',
                                 fontWeight: 'bold',
-                                fontSize: '4Spx',
+                                fontSize: '39px',
                                 lineHeight: '46px',                           
                                 color: '#FFFFFF',
                             }}
@@ -35,8 +35,20 @@ export default function Choice() {
                             >Watch this one minute video so you understand why you should use our services!</Typography>
                     </Grid>
                 </Grid>
-                <Box>
-                                <img style={imgStyle} src={img} alt="" />
+                <Box sx={{
+                    position:'relative'
+                }}>
+                                <img  style={imgStyle} src={img} alt="" />
+                                <ArrowRightIcon
+                                    sx={{
+                                        position: 'absolute',
+                                        color:'#fff',
+                                        padding:'10px',
+                                        background:'pink'
+                                        
+                                    }}
+                                
+                                />
                 </Box>
             </Container>
         </>
