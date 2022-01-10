@@ -132,7 +132,7 @@ export default function Banner() {
                             height: '52px',
                             border: '1px solid rgb(255, 255, 255)',
                             position:'absolute',
-                            left:'99px',
+                            left:{md:'99px',xs:'45px'},
                             '&::before':{
                                 content: '""',
                                 height: '60px',
@@ -164,7 +164,7 @@ export default function Banner() {
                             height: '52px',
                             width: '53px',
                             border: '0.66369px solid #fff',
-                            left: '86px',
+                            left: {md:'86px',xs:'53px'},
                             bottom: '-20px',
                             borderStyle: 'solid',
                             borderColor: '#fff',
@@ -203,7 +203,7 @@ export default function Banner() {
                                 border: '2px solid #fff',
                                 borderRadius: '50%' ,  
                                 position: 'absolute',
-                                right: '92px',
+                                right: {md:'92px',xs:'38px'},
                                 '&::before':{
                                     content:'""' ,
                                      position: 'absolute',
@@ -226,7 +226,7 @@ export default function Banner() {
                                 background: '#fff',
                                 padding: '11px 2px ',
                                 top: '95%',
-                                right: '16%',
+                                right: {md:'16%',xs:'11%'},
                                 '&::before':{
                                     content: '""',
                                     height: '5px',
