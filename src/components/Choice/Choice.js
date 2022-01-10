@@ -10,6 +10,7 @@ const imgStyle={
     marginTop:'50px' 
 }
 export default function Choice() {
+    
     return (
         <>
             <Container maxWidth='lg' sx={{margin:'100px auto'}}>
@@ -37,14 +38,23 @@ export default function Choice() {
                 </Grid>
                 <Box sx={{
                     position:'relative'
-                }}>
+                }}>             
                                 <img  style={imgStyle} src={img} alt="" />
                                 <ArrowRightIcon
                                     sx={{
                                         position: 'absolute',
                                         color:'#fff',
                                         padding:'10px',
-                                        background:'pink'
+                                        background:'#5454D4',
+                                        fontSize:'45px',
+                                        borderRadius:'50%',
+                                        left:'48%',
+                                        top:'48%',
+                                        cursor: 'pointer',
+                                        '&:hover':{
+                                            background:'#fff',
+                                            color:'#5454D4',
+                                        }
                                         
                                     }}
                                 

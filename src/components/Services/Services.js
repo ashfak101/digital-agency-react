@@ -6,12 +6,90 @@ import ViewAgendaIcon from '@mui/icons-material/ViewAgenda';
 import CameraAltIcon from '@mui/icons-material/CameraAlt';
 import SlowMotionVideoIcon from '@mui/icons-material/SlowMotionVideo';
 import IntegrationInstructionsIcon from '@mui/icons-material/IntegrationInstructions';
-import { color } from '@mui/system';
+import { styled } from '@mui/system';
+
+const MyComponent = styled('span')({
+   
+});
+
 export default function Services() {
     return (
         <>
            <Container>
-           <Box>
+           <Box sx={{position:'relative'}}>
+               
+
+          
+           <MyComponent
+                        sx={{
+                            position: 'absolute',
+                            bottom: '0px',
+                            height: '52px',
+                            border: '1px solid rgb(255, 255, 255)',
+                            position:'absolute',
+                            left:'15px',
+                            '&::before':{
+                                content: '""',
+                                height: '60px',
+                                 width: '1px',
+                                 position: 'absolute',
+                                background: '#fff',
+                                left: '24px',
+                                top: '6px',
+                                transform: 'rotate(60deg)',
+                            },
+                            '&::after':{
+                                content: '""',
+                                height: '55px',
+                                width: '1px',
+                                border: '1px solid #fff',
+                                 position: 'absolute',
+                                transform: 'rotate(111deg)',
+                                 right: '-27px',
+                                bottom: '13px',
+                            }
+
+                        }}
+                        
+                        ></MyComponent>
+                        <MyComponent
+                            sx={{
+                                position: 'absolute',
+                            bottom: '-14px',
+                            height: '52px',
+                            width: '53px',
+                            border: '0.66369px solid #fff',
+                            left: '6px',
+                            bottom: '-20px',
+                            borderStyle: 'solid',
+                            borderColor: '#fff',
+                            borderTop: 'none',
+                            borderBottom: 'none',
+                            borderRight: 'none',
+                            '&::before':{
+                                content: '""',
+                                height: '60px',
+                                 width: '1px',
+                                 position: 'absolute',
+                                background: '#fff',
+                                left: '24px',
+                                top: '6px',
+                                transform: 'rotate(60deg)',
+                            },
+                            '&::after':{
+                                content: '""',
+                                height: '55px',
+                                width: '0px',
+                                border: '1px solid #fff',
+                                 position: 'absolute',
+                                transform: 'rotate(111deg)',
+                                 right: '26px',
+                                bottom: '13px',
+                            }
+                            }}
+                        >
+
+                        </MyComponent>
                 <Typography variant='h2'
                     sx={{
                         fontSize:'39.8214px',
@@ -21,7 +99,28 @@ export default function Services() {
                         color:'#fff',
                         marginBottom:'64px'
                     }}
-                >The Service We Provide For You</Typography>   
+                >The Service We Provide For You</Typography>  
+                 <MyComponent
+                            sx={{
+                                height: '30px',
+                                width: '1px',
+                                position: 'absolute',
+                                background: '#fff',
+                                padding: '11px 2px ',
+                                top: '45%',
+                                right: '4%',
+                                transform: 'rotate(45deg)',
+                                '&::before':{
+                                    content: '""',
+                                    height: '5px',
+                                    width: '50px',
+                                    background: '#fff',
+                                    position: 'absolute',
+                                    right: '-23px',
+                                    top: '23px',
+                                }
+                            }}
+                        ></MyComponent> 
             </Box> 
             <Grid container spacing={8} sx={{
                 textAlign:'center'
