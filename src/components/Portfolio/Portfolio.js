@@ -17,7 +17,8 @@ export default function Portfolio() {
                     position: 'absolute',
                     width: '397.93px',
                     height: '433.29px',
-                    left: '1194.66px',
+                    right:'100px',
+                    // left: {lg:'1194.66px',md:'508px'},
                     top: '2077.56px',
                     
                     background: 'linear-gradient(180deg, rgba(84, 84, 212, 0.2) 0%, rgba(84, 84, 212, 0.084) 100%)',
@@ -34,8 +35,8 @@ export default function Portfolio() {
                                 position: 'absolute',
                                 background: '#fff',
                                 padding: '11px 2px ',
-                                top:{ md:'-129%', xs:'-41%'},
-                                left: {md:'-2%',xs:'2%'},
+                                top:{ lg:'-129%',md:'-122%', xs:'-41%'},
+                                left: {lg:'-2%',md:'1%',xs:'2%'},
                                 transform: 'rotate(45deg)',
                                 '&::before':{
                                     content: '""',
@@ -96,7 +97,8 @@ export default function Portfolio() {
                                 position: 'absolute',
                                 height: '1px',
                                 left:{
-                                    md:'-50px',
+                                    lg:'-50px',
+                                    md:'41px',
                                     xs:'13px'
                                 },
                                 top:{

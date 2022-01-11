@@ -3,7 +3,7 @@ import React from 'react'
 import bannerImg from '../../Images/banner-img.png'
 import { styled } from '@mui/system';
 
-
+import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 
 const MyComponent = styled('span')({
    
@@ -72,7 +72,9 @@ export default function Banner() {
                                  background:'#5454D4',
                                  fontWeight: '700',
                              }}
-                            >Our Services</Button>
+                            >Our Services <ArrowForwardIcon sx={{
+                                transform:'rotate(-35deg)'
+                            }}/> </Button>
                         </Grid>
                         <Grid item xs={12} sm={12} lg={7} md={7} sx={{textAlign:'center',
                          position: 'relative',
@@ -83,7 +85,8 @@ export default function Banner() {
                             height: '249px',
                             width: '249px',
                             left: {
-                                md:'246px',
+                                lg:'240px',
+                                md:'188px',
                                 xs:'106px'
                             },
                             bottom: '36px',
@@ -100,7 +103,7 @@ export default function Banner() {
                             position: 'absolute',
                            
                             border: '1px solid #fff',
-                            left: {md:'217px',xs:'92px',},
+                            left: {lg:'217px',md:'156px',xs:'92px',},
                              bottom: '84px',
                             transform: 'rotate(24deg)',
                             borderRadius: '10px',
@@ -108,6 +111,7 @@ export default function Banner() {
                             }  
                     }}>
                         <MyComponent
+                        // ---Custome Arrow Icon
                             sx={{
                                 border: 'solid rgb(255, 255, 255)',
                                 borderWidth: '0 3px 3px 0',
@@ -142,6 +146,8 @@ export default function Banner() {
                             }}  
                         ></MyComponent>
                         <MyComponent
+
+                        // --- Custome Triangle ICon 
                         sx={{
                             position: 'absolute',
                             bottom: '0px',
@@ -174,6 +180,7 @@ export default function Banner() {
                         
                         ></MyComponent>
                         <MyComponent
+                         // --- Custome Triangle ICon 
                             sx={{
                                 position: 'absolute',
                             bottom: '-14px',
@@ -212,6 +219,8 @@ export default function Banner() {
 
                         </MyComponent>
                         <MyComponent
+
+                        // Custome Circle Icon
                             sx={{
                                 width: '13px',
                                 height: '30px',
@@ -235,6 +244,7 @@ export default function Banner() {
 
                         </MyComponent>
                         <MyComponent
+                        // Custome Plus Icon
                             sx={{
                                 height: '30px',
                                 width: '1px',

@@ -25,7 +25,8 @@ export default function Contact() {
                                 borderRadius: '50%' ,  
                                 position: 'absolute',
                                 left:{
-                                    md:'0',
+                                    lg:'0',
+                                    md:'28px',
                                     xs:'66px'
                                 } ,
                                 bottom:'-70px',

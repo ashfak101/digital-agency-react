@@ -105,6 +105,7 @@ export default function Header() {
                 
               </Menu>
             </Box>
+            {/* For small device */}
             <Typography
               variant="h6"
               noWrap
