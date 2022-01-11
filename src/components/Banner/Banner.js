@@ -19,8 +19,24 @@ export default function Banner() {
     return (
         <>
             <Box sx={{marginTop:'98px'}}>
+                {/* for Gradient */}
+                <Box
+                    sx={{
+                        display:{md:'block', xs:'none'},
+                        position: 'absolute',
+                        width: '309.94px',
+                        height: '818.86px',
+                        left: '73.48px',
+                        top: '-62px',
+                       overflow:'auto',
+                        background: 'linear-gradient(180deg, rgba(84, 84, 212, 0.27) 0%, rgba(84, 84, 212, 0.1134) 100%)',
+                        filter: 'blur(199.107px)',
+                        borderRadius: '154.972px',
+                        transform: 'rotate(-54.37deg)',
+                    }}
+                ></Box>
                 <Container maxWidth='lg'>
-                   <Grid container spacing={3}>
+                   <Grid container spacing={2}>
                         <Grid item xs={12} sm={12} lg={5} md={5}>
                             <Typography variant='h2'
                                 sx={{

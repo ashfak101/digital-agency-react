@@ -48,8 +48,8 @@ export default function Choice() {
                                         background:'#5454D4',
                                         fontSize:'45px',
                                         borderRadius:'50%',
-                                        left:'48%',
-                                        top:'48%',
+                                        left: {md:'48%',xs:'39%'},
+                                        top: {md:'48%',xs:'47%'},
                                         cursor: 'pointer',
                                         '&:hover':{
                                             background:'#fff',

@@ -12,9 +12,11 @@ export default function Contact() {
             <Box sx={{
                 padding:'124px 0',
                 background: 'rgba(30, 30, 32, 0.5)',
-                position:'relative'
+                
             }}>
-                <MyComponent
+               
+            <Container sx={{position:'relative'}}>
+            <MyComponent
                             sx={{
                                 width: '13px',
                                 height: '30px',
@@ -23,10 +25,10 @@ export default function Contact() {
                                 borderRadius: '50%' ,  
                                 position: 'absolute',
                                 left:{
-                                    md:'267px',
+                                    md:'0',
                                     xs:'66px'
                                 } ,
-                                bottom:'24px',
+                                bottom:'-70px',
                                 '&::before':{
                                     content:'""' ,
                                      position: 'absolute',
@@ -46,8 +48,8 @@ export default function Contact() {
                                 position: 'absolute',
                                 background: '#fff',
                                 padding: '11px 2px ',
-                                top: '10%',
-                                right: '16%',
+                                top: '-53%',
+                                right: '8%',
                                 '&::before':{
                                     content: '""',
                                     height: '5px',
@@ -58,7 +60,6 @@ export default function Contact() {
                                     top: '21px',
                                 }
                             }} ></MyComponent>
-            <Container>
                 <Grid container spacing={2}>
                     <Grid xs={12} sm={12} md={7}>
                         <Typography variant='h3'

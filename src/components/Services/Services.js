@@ -14,7 +14,23 @@ const MyComponent = styled('span')({
 
 export default function Services() {
     return (
-        <>
+        <>  
+        {/* Gradient */}
+            <Box
+                sx={{
+                    display:{md:'block',xs:'none'},
+                    position: 'absolute',
+                    width: '309.94px',
+                    height: '337.48px',
+                    left: '76.07px',
+                    top: '1420.3px',
+
+                    background: 'linear-gradient(180deg, rgba(84, 84, 212, 0.21) 0%, rgba(84, 84, 212, 0.0882) 100%)',
+                    filter:' blur(199.107px)',
+                    borderRadius: '154.972px',
+                    transform: 'rotate(-54.37deg)',
+                }}
+            ></Box>
            <Container>
            <Box sx={{position:'relative'}}>
                
@@ -27,7 +43,8 @@ export default function Services() {
                             height: '52px',
                             border: '1px solid rgb(255, 255, 255)',
                             position:'absolute',
-                            left:'15px',
+                            left:{md:'106px', xs:'-11px'},
+                            top:{xs:'0'},
                             '&::before':{
                                 content: '""',
                                 height: '60px',
@@ -59,7 +76,8 @@ export default function Services() {
                             height: '52px',
                             width: '53px',
                             border: '0.66369px solid #fff',
-                            left: '6px',
+                            left: {md:'116px',sx:'-2px'},
+                            top:{xs:'17px'},
                             bottom: '-20px',
                             borderStyle: 'solid',
                             borderColor: '#fff',
@@ -101,14 +119,15 @@ export default function Services() {
                     }}
                 >The Service We Provide For You</Typography>  
                  <MyComponent
+                 //Plus ICon
                             sx={{
                                 height: '30px',
                                 width: '1px',
                                 position: 'absolute',
                                 background: '#fff',
                                 padding: '11px 2px ',
-                                top: '45%',
-                                right: '4%',
+                                top: {md:'45%',xs:'19%'},
+                                right: {md:'10%',xs:'5%'},
                                 transform: 'rotate(45deg)',
                                 '&::before':{
                                     content: '""',

@@ -5,13 +5,27 @@ import img2 from '../../Images/portfolio-image/img2.png'
 import img3 from '../../Images/portfolio-image/img3.png'
 import { styled } from '@mui/system';
 
-const MyComponent = styled('span')({
-   
+const MyComponent = styled('span')({  
 });
 export default function Portfolio() {
     return (
         <>
         <Container>
+            <Box
+                sx={{
+                    display:{md:'block',xs:'none'},
+                    position: 'absolute',
+                    width: '397.93px',
+                    height: '433.29px',
+                    left: '1194.66px',
+                    top: '2077.56px',
+                    
+                    background: 'linear-gradient(180deg, rgba(84, 84, 212, 0.2) 0%, rgba(84, 84, 212, 0.084) 100%)',
+                    filter:' blur(199.107px)',
+                    borderRadius: '154.972px',
+                    transform: 'matrix(-0.58, -0.81, -0.81, 0.58, 0, 0)',
+                }}
+            ></Box>
         <Box sx={{margin:'45px 0',position:'relative'}}>
         <MyComponent
                             sx={{
@@ -72,6 +86,7 @@ export default function Portfolio() {
             
             <Box sx={{ textAlign: 'center', marginTop: '61px',position:'relative' }}>
             <MyComponent
+            // Arrow--icon//
                             sx={{
                                 border: 'solid rgb(255, 255, 255)',
                                 borderWidth: '0 3px 3px 0',
@@ -79,6 +94,7 @@ export default function Portfolio() {
                                 padding: '10px',
                                 transform: 'rotate(-135deg)',
                                 position: 'absolute',
+                                height: '1px',
                                 left:{
                                     md:'-50px',
                                     xs:'13px'
